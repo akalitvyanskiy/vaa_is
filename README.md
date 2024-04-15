@@ -72,9 +72,9 @@
 
 При этом способе сканирования отправляется TCP-пакет с установленным флагом FIN, который используется для корректного закрытия соединения. Следовательно, цель должна ответить RST для closed портов, в соответствии с RFC.  
 
-![Скриншот 12](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/26.png)
-![Скриншот 13](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/27.png)
-![Скриншот 14](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/28.png)  
+![Скриншот 12](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/26.png)
+![Скриншот 13](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/27.png)
+![Скриншот 14](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/28.png)  
 
 Сканирование TCP Xmas также похоже на два предыдущих метода, за исключением того, что используются TCP-пакеты с установленными флагами PSH, URG и FIN. Как и в предыдущих двух типах сканирования, этот тип также ожидает пакеты RST для closed портов в соответствии с RFC.  
 
