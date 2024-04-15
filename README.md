@@ -39,13 +39,13 @@
 *Приведите ответ в свободной форме.*  
 
 Разрешенные сетевые службы приведены на следующем листинге:  
-![Скриншот 1](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/1.png)  
+![Скриншот 1](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/1.png)  
 
 Обнаруженные уязвимости:  
-![Скриншот 2](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/12.png)
-![Скриншот 3](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/13.png)
-![Скриншот 4](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/14.png)
-![Скриншот 5](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/15.png)
+![Скриншот 2](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/12.png)
+![Скриншот 3](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/13.png)
+![Скриншот 4](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/14.png)
+![Скриншот 5](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/15.png)
 
 
 ### Задание 2
@@ -60,15 +60,15 @@
 - Как отвечает сервер?
 
 *Приведите ответ в свободной форме.*  
-![Скриншот 6](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/2.png)
-![Скриншот 7](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/21.png)
-![Скриншот 8](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/22.png)  
+![Скриншот 6](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/2.png)
+![Скриншот 7](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/21.png)
+![Скриншот 8](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/22.png)  
 
 Сканирование SYN, или так называемое “полуоткрытое”, или “скрытое сканирование”.Цель отвечает TCP-пакетом с установленными флагами SYN/ACK, значит, порт открыт, в противном случае отвечает RST/ACK. Nmap после получения пакета SYN/ACK отправляет TCP пакет с установленным флагом RST (бит флага сброса (RST) в заголовке TCP-пакетов означает, что получатель должен немедленно прекратить использовать данное соединение). Это предотвращает повторные попытки сервера выполнить запросы и значительно сокращает время сканирования.  
 
-![Скриншот 9](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/23.png)
-![Скриншот 10](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/24.png)
-![Скриншот 11](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/25.png)  
+![Скриншот 9](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/23.png)
+![Скриншот 10](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/24.png)
+![Скриншот 11](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/25.png)  
 
 При этом способе сканирования отправляется TCP-пакет с установленным флагом FIN, который используется для корректного закрытия соединения. Следовательно, цель должна ответить RST для closed портов, в соответствии с RFC.  
 
@@ -78,9 +78,9 @@
 
 Сканирование TCP Xmas также похоже на два предыдущих метода, за исключением того, что используются TCP-пакеты с установленными флагами PSH, URG и FIN. Как и в предыдущих двух типах сканирования, этот тип также ожидает пакеты RST для closed портов в соответствии с RFC.  
 
-![Скриншот 15](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/29.png)
-![Скриншот 16](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/291.png)
-![Скриншот 17](https://github.com/akalitvyanskiy/vaa-is/blob/main/img/292.png)  
+![Скриншот 15](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/29.png)
+![Скриншот 16](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/291.png)
+![Скриншот 17](https://github.com/akalitvyanskiy/vaa_is/blob/main/img/292.png)  
 
 Сканирование UDP менее надежно, поскольку UDP-соединения не имеют статических данных. Это означает, что нет механизма такого, как в TCP. UDP работает по принципу “сделал и забыл” — он отправляет пакеты, направленные на определенные порты, и надеется, что они дойдут. Однако отсутствие механизма обратной связи затрудняет идентификацию открытых портов.  
 
